@@ -1,0 +1,42 @@
+
+
+.iconsMenu {
+	display: flex;
+}
+
+.favoritesLink {
+	position: relative;
+	cursor: pointer;
+	width: 34px;
+	height: 34px;
+	transition: all 0.5s ease 0s;
+}
+.favoritesLink:hover {
+	transform: rotate(360deg) scale(1.3) ;
+}
+.favoritesLink:active {
+
+	transform: scale(1.4) ;
+}
+.favoritesLink svg{
+	width: 100%;
+	height: 100%;
+	fill:#a50101;
+}
+
+.iconBubble{
+	background-color: #590094;
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 12px;
+	width: 18px;
+	height: 18px;
+	line-height: 1.25;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 60%;
+	left: 70%;
+}
