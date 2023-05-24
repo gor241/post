@@ -1,46 +1,80 @@
-# Getting Started with Create React App and Redux
+# Космические посты
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+### [Сайт с постами](https://gor241.github.io/post)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+## Screenshots:
+![Скриншот](public/222.jpg) | ![Скриншот](public/223.jpg)
+--- | ---
+![Скриншот](public/224.jpg) | ![Скриншот](public/225.jpg)
+--- | ---
+![Скриншот](public/226.jpg) | ![Скриншот](public/227.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Функциональность:
+- SPA с постами
+- Отработка взаимодействия с кастомным серверным api
+- Все формы на сайте упраляемые компоненты
+- Реализованн вход/регистрация на сайт (реализован паттерн для
+email с использованием регулярного выражения)
+- Функционал 'Забыл пароль' ( мы вводим email от
+своего аккаунта. Система отправит на нашу почту пароль, мы его введём с новым паролем
+и произведём вход.)
+- В шапке нам становится доступен поиск среди постов, меню пользователя и иконка избранное
+- Добавление и удаления карточек 
+- Добавление и удаление лайков/комментариев
+- Использованно как redux(toolkit), так и context
+- При нажатии на аватар открывается меню, в котором можно открыть профиль,
+'все созданные посты' и выйти.
+- При нажатии на
+'Открыть профиль' открывается модальное окно с данными о нашем
+пользователе. Также здесь две кнопки отвечающие за изменение имени и аватара.
+- При нажатии на
+'Открыть посты', откроются все, ранее созданные нами посты.
+- При нажатии на иконку избранное, мы переходим
+на страницу 'Избранное' (все посты, на которые мы поставили лайк)
+- При нажатии на пост, мы попадаем на страницу поста. Если пост создан пользователем,
+который нажал на пост, становятся доступны кнопки : Редактирование и Удаление
+поста
+- При нажатии редактирование поста, открывается модальное окно, в котором мы
+можем редактировать этот пост. Реализовано автоматическое добавление данных
+об этом посте в формы
+- На странице поста имеется возможность, добавлять
+редактировать удалять
+комментарии. Последние два, доступны только автору комментария
+- На странице поста можно нажать на аватар, как автора поста, так и автора
+комментария, чтобы открыть информацию о пользователе, в котором мы можем
+перейти на все посты, созданные этим пользователем
+- В шапке реализован поиск по названию поста с кнопкой отмены
+стирание
+- На главной странице постов реализована сортировка
+по времени,
+кол ву лайков и кол ву комментариев (как от большого к меньшему,
+так и наоборот)
+- На странице постов реализована серверная пагинация, с возможностью выбора
+кол ва постов за раз
+- Реализована страница 404
+- В подвале сайта, помимо автора проекта реализована кнопка наверх, а также
+переходы на социальные сети
+- Структура проекта реализована в соответствии с рекомендациями
+разработчиков React
+- Сторонний функционал:
+  - 1. React toolkit набор инструментов, который упрощает и автоматизирует работу с Redux
+  - 2. Router ( routes,route,navlink ) маршрутизация на стороне клиента
+  - 3. MUI (библиотека Material UI) готовые компоненты и иконки
+  - 4. React Hook Form библиотека для управления формами в React
+  - 5. Classnames способ работы с CSS классами
+  - 6. React transition group плавные переходы между маршрутами
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Работа с проектом
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm -f i` - Установка модулей
 
-### `npm run build`
+`npm start` - Cтарт проекта 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm run deploy` - Собрать проект в build и выставить на github pages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
