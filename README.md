@@ -2,9 +2,6 @@
 
 ### [Сайт с постами](https://gor241.github.io/post)
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ## Screenshots:
 ![Скриншот](public/222.jpg) | ![Скриншот](public/223.jpg)
